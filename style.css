@@ -1,0 +1,861 @@
+/* 
+NOTES
+text black is rgb(33,37,41)
+background black is rgb (29,29,29)
+creme color is #eceee7
+*/
+
+
+html,
+body {
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: serif;
+  font-weight: 100;
+  /* transform: scale(1, .95); */
+  background-color: #eceee7;
+}
+
+#preloader {
+  background: rgb(255, 255, 255) url(assets/images/other/appleii.gif) no-repeat center center;
+  background-size: 25%;
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1100;
+}
+
+a {
+  text-decoration: none;
+  color:#eceee7;
+}
+
+a:hover {
+  text-decoration: none;
+  color:#eceee7;
+  text-decoration: none;
+}
+a:link {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+.darkText {
+  color: rgb(33, 37, 41);
+}
+
+/* ===================Head of Page======================== */
+
+
+
+.title {
+  text-align: center;
+  align-content: center;
+  font-size: 3vw;
+  width: 100%;
+  margin: auto;
+  font-weight: bold;
+  padding: 3.5% 0 1% 1.2%;
+  letter-spacing: 11px;
+  transform: scale(1, .95);
+  /* font-family: ltc-bodoni-175, serif; */
+  font-style: italic;
+  font-weight: 400;
+  text-transform: lowercase;
+  /* font-family: 'Shippori Mincho', serif; */
+  /* the css header link is only in the index page -- update all html pages to use google fonts */
+
+  /* background-color: aqua; */
+}
+
+
+
+
+/* ================NAV================= */
+.nav {
+  text-align: right;
+  align-content: right;
+  font-size: 90%;
+  /* margin: 0 15%; */
+  margin: 0 2% 0 auto;
+  transform: scale(1, .9);
+
+}
+
+.navSub {
+  transform: scale(1, .9);
+  text-align: right;
+  /* padding: 1% auto; */
+  align-content: right;
+  margin: 0 2% 0 auto;
+  color: rgb(107, 107, 107);
+  text-decoration: none;
+  font-family: sans-serif;
+  font-style: normal;
+  /* font-weight: bold; */
+}
+
+.navSub:link {
+  color: rgb(78, 78, 78);
+  text-decoration: none;
+}
+
+.navSub:visited {
+  color: none;
+}
+
+.navSub:hover {
+  color: rgb(190, 190, 190);
+  /* text-shadow: 1px 1px 8px rgba(200,200,200,10); */
+}
+
+.navSub:active {
+  color: rgb(190, 190, 190);
+
+}
+
+.navActivePage {
+  color: rgb(190, 190, 190);
+}
+
+/* ==========={ BS nav BS }=========== */
+.navbar {
+  background-color: none;
+  text-align: right;
+  align-content: right;
+}
+
+.bg {
+  background-color: none;
+  text-align: right;
+  align-content: right;
+}
+
+.navbar-light {
+  background-color: none;
+  text-align: right;
+  align-content: right;
+}
+
+.navbar-expand-lg {
+  background-color: none;
+  text-align: right;
+  align-content: right;
+}
+
+.navbar-nav {
+  text-align: right;
+  padding: 1% auto;
+  align-content: right;
+  margin: 0 2% 0 auto;
+  color: rgb(107, 107, 107);
+  text-decoration: none;
+}
+
+.navbar-nav:hover {
+  color: rgb(190, 190, 190);
+}
+
+.nav-item {
+  text-align: right;
+  padding: 1% auto;
+  align-content: right;
+  /* margin: 0 2% 0 auto; */
+  color: rgb(107, 107, 107);
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  color: rgb(190, 190, 190);
+}
+
+.nav-link {
+  text-align: right;
+  padding: 1% auto;
+  align-content: right;
+  margin: 0 2% 0 auto;
+  color: rgb(107, 107, 107);
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  text-align: right;
+  align-content: right;
+    margin: 0 2% 0 auto;
+}
+
+.navbar-toggler-icon {
+  text-align: right;
+  align-content: right;
+
+}
+
+
+
+
+
+
+
+/* ============================={ End Head of Page }================================ */
+
+/* ===================={ index }==================================================== */
+
+
+
+.build {
+  width: 100%;
+  margin: 2% 0;
+  /* border-radius: 10px; */
+}
+
+.typeMainTitle {
+  text-align: right;
+  /* align-content: center; */
+  font-size: 3vw;
+  width: 100%;
+  /* margin: auto; */
+  font-weight: bold;
+  padding: 3.5% 2% 1% 0;
+  letter-spacing: 5px;
+  transform: scale(1, .95);
+  /* font-family: ltc-bodoni-175, serif; */
+  font-style: italic;
+  /* font-weight: 400; */
+  text-transform: lowercase;
+  color: rgb(33, 37, 41);
+  /* font-family: 'Shippori Mincho', serif; */
+  /* the css header link is only in the index page -- update all html pages to use google fonts */
+
+  /* background-color: aqua; */
+}
+
+.typeMainTitle:hover {
+  font-style: normal;
+}
+
+.typeTitle {
+  font-size: 10vw;
+  font-weight: bold;
+  line-height: 8vw;
+}
+
+.ttTHE {
+  font-size: 3vw;
+  font-weight: bold;
+  /* line-height: 8vw; */
+  display: inline-block;
+  transform: rotate(270deg);
+  position: relative;
+  bottom: 25px;
+}
+
+.homeTypePic {
+ text-align: center;
+}
+.homeTypePicImg {
+  width: 40%;
+}
+
+
+.typePageGraphicMenu {
+  /* padding: 0 auto 50% auto; */
+  margin: 0 auto 5% auto;
+}
+
+.typePagePic {
+ text-align: center;
+ align-items: center;
+ align-content: center;
+}
+.typePagePicImg {
+  width: 80%;
+}
+.typePagePicImg:hover {
+  width: 82%;
+  transition: width .4s;
+}
+
+.typePageLabels {
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: rgb(33, 37, 41);
+  
+}
+
+.typePageLabels:hover {
+  text-decoration: none;
+  font-style:normal;
+}
+
+
+.typePageSectionTitle {
+  font-size: 4vw;
+  /* padding: 3% 5% 1% 5%; */
+  font-weight: bold;;
+  text-align: center;
+  margin: 5% auto;
+  font-style: italic;
+  color:#eceee7;
+  text-decoration: none;
+}
+
+.typePageSectionTitle:hover {
+  font-size: 4vw;
+  /* padding: 3% 5% 1% 5%; */
+  font-weight: bold;;
+  text-align: center;
+  margin: 5% auto;
+  font-style: normal;
+  color:#eceee7;
+  text-decoration: none;
+}
+
+.typePageSectionTitle:link {
+  font-size: 4vw;
+  /* padding: 3% 5% 1% 5%; */
+  font-weight: bold;;
+  text-align: center;
+  margin: 5% auto;
+  font-style: normal;
+  color:#eceee7;
+  text-decoration: none;
+}
+
+.typePageBottomBtns {
+  
+  
+}
+.typePageBottomBtnL {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  
+}
+.typePageBottomBtnR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  
+}
+
+
+
+.typePic {
+ text-align: center;
+}
+.typePicImg {
+  width: 40%;
+}
+
+.typeTagLine {
+  font-size: 2vw;
+  text-align: center;
+  font-style: italic;
+  color: rgb(33,37,41);
+  margin: 0 auto 3% auto;
+}
+
+
+
+
+
+
+.quizzesPageSectionTitle {
+  font-size: 4vw;
+  /* padding: 3% 5% 1% 5%; */
+  font-weight: bold;;
+  text-align: center;
+  margin: 5% auto;
+  font-style: italic;
+  color: rgb(33, 37, 41);
+  text-decoration: none;
+}
+
+.quizzesPageSectionTitle:hover {
+  font-size: 4vw;
+  /* padding: 3% 5% 1% 5%; */
+  font-weight: bold;;
+  text-align: center;
+  margin: 5% auto;
+  font-style: normal;
+  color: rgb(33, 37, 41);
+  text-decoration: none;
+}
+
+.quizzesPageSectionTitle:link {
+  font-size: 4vw;
+  /* padding: 3% 5% 1% 5%; */
+  font-weight: bold;;
+  text-align: center;
+  margin: 5% auto;
+  font-style: normal;
+  color: rgb(33, 37, 41);
+  text-decoration: none;
+}
+
+
+.quizzesPageBtns {
+  
+  
+}
+.quizzesPageBtnL {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  
+}
+.quizzesPageBtnR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  
+}
+
+
+
+
+
+
+
+.darkSection {
+  background-color: rgb(29,29,29);
+  color:#eceee7;
+  padding: 0 0 3% 0;
+}
+.lightSection {
+  color: rgb(33,37,41);
+  padding: 0 0 3% 0;
+}
+
+.sectionCenterTitle {
+   font-size: 4.5vw;
+  padding: 3% 5% 1% 5%;
+  font-weight: bold;;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 4vw;
+  padding: 3% 5% 1% 5%;
+  font-weight: bold;;
+}
+.sectionText {
+  font-size: 2vw;
+  padding: 0 5% 1% 5%;
+  
+}
+
+.sectionSubHeading {
+  font-size: 3vw;
+  padding: 3% 7% 1% 7%;
+  font-weight: bold;;
+}
+.sectionSubText {
+  font-size: 2vw;
+  padding: 0 7% 1% 7%;
+}
+
+.sectionSubTextEmphasis1 {
+  font-weight: bold;
+}
+.sectionSubTextEmphasis2 {
+font-style:italic;
+}
+
+
+/* ====================={ Mixed Media }============================================ */
+
+
+/* ========================{ Paint Page }========================================== */
+
+
+
+/* ====================={ Contact Page }========================================== */
+
+.contactContentSpacing {
+  margin: 3% auto 15% auto;
+}
+
+.contactEntry {
+  /* text-align: center; */
+  margin: 10% 5%;
+
+}
+
+/* .formTitleTag {
+      text-align: left;
+  } */
+
+.formNameEntry {
+  width: 100%;
+}
+
+.formEmailEntry {
+  width: 100%;
+}
+
+.formMessageEntry {
+  width: 100%;
+}
+
+
+.subBtnStyle {
+  /* justify-content: center; */
+  /* align-content: center; */
+  text-align: center;
+  /* border-radius: 4px; */
+}
+
+.submit-btn {
+  border-radius: 7px;
+  text-decoration: none;
+  border: none;
+  /* box-shadow: 3px 4px 8px rgba(200,200,200,10); */
+}
+
+.submit-btn:link {
+  text-decoration: none;
+  background-color: blue;
+}
+
+.submit-btn:hover {
+  text-decoration: none;
+  background-color: rgb(246, 246, 246);
+  color: rgb(112, 112, 112);
+  border: none;
+  box-shadow: 3px 4px 8px rgba(200, 200, 200, 10);
+}
+
+.submit-btn:visited {
+  text-decoration: none;
+}
+
+.submit-btn:active {
+  text-decoration: none;
+}
+
+.successMessage {
+  text-align: center;
+  align-content: center;
+  color: rgb(9, 226, 179);
+  font-size: 1vw;
+}
+
+/* ========================{ Other Page }========================================== */
+
+
+/* =========================={ About Page }======================================== */
+
+
+/* =========================={ Footer }========================================== */
+
+
+.footerRowMaster {
+  background-color: rgb(29, 29, 29);
+
+}
+
+.footerRow {
+  background-color: rgb(29, 29, 29);
+  /* height: 30vh; */
+  color: #eceee7;
+}
+
+.footerLeftCol {
+  text-align: center;
+  align-content: center;
+  margin: 5% auto;
+  /* margin: auto; */
+  /* background-color: red; */
+  text-decoration: none;
+
+}
+
+.footerMidCol {
+  text-align: center;
+  align-content: center;
+  margin: 5% auto;
+  /* padding: auto 20px auto 0px; */
+  /* margin: auto; */
+  /* background-color: rgb(225, 226, 159); */
+  text-decoration: none;
+}
+
+.footerRightCol {
+  text-align: center;
+  align-content: center;
+  margin: 5% auto;
+  /* margin: auto; */
+  /* background-color: rgb(0, 204, 255); */
+  text-decoration: none;
+}
+
+.footerTitle {
+  font-weight: bold;
+  /* font-size: 1.5vw; */
+}
+
+.footerLinks {
+  text-decoration: none;
+  color: white;
+  font-size: 1vw;
+}
+
+.footerLinks:hover {
+  text-decoration: none;
+  color: rgb(184, 184, 184);
+}
+
+.copyRow {
+  /* height: 7vh; */
+  background-color: rgb(29, 29, 29);
+  /* padding: 10% auto; */
+  margin: 5% auto;
+}
+
+.copyright {
+  margin: 0 auto;
+  padding: 10% auto;
+  /* margin: auto; */
+
+  text-decoration: none;
+  text-align: center;
+  font-size: 1vw;
+  color: white;
+}
+
+
+
+
+
+
+/* =========================={ Messages }========================================== */
+
+.stSpecial {
+  color: rgb(9, 226, 179);
+}
+
+.stSpecial:hover {
+  color: rgb(92, 255, 220);
+  text-decoration: none;
+}
+
+.messagesDiv {
+  align-content: center;
+  text-align: center;
+  margin: 7% auto;
+  width: 90%;
+}
+
+.nameCol {
+  color: rgb(9, 201, 226);
+}
+
+.emailCol {
+  color: rgb(9, 157, 226);
+}
+
+.messageCol {
+  color: rgb(9, 121, 226);
+}
+
+
+/* ========================{ Extra }======================================= */
+
+
+/* ========================{ JS styling }======================================= */
+/* lightbox */
+
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  display: none;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  background-color: rgb(33, 37, 41);
+  border: 20px solid white;
+}
+
+
+
+
+
+
+
+
+/* ========================{ Media Queries }======================================= */
+
+/* PHONES */
+
+@media screen and (max-width: 992px) {
+
+
+  #preloader {
+    background-size: 65%;
+  }
+
+  .title {
+    font-size: 6vw;
+  }
+
+
+  .ttTHE {
+  font-size: 3vw;
+ 
+  bottom: 12px;
+}
+
+.homeTypePicImg {
+  width: 80%;
+}
+
+
+
+/*  */
+
+.typePageGraphicRows {
+  margin: 7% auto;
+}
+
+.typePagePicImg {
+  width: 50%;
+}
+.typePagePicImg:hover {
+  width: 50%;
+  transition: width .4s;
+}
+
+.typePageLabels {
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 3vw;
+  text-decoration: none;
+  color: rgb(33, 37, 41);
+  
+}
+
+.typePageLabels:hover {
+  text-decoration: none;
+  font-style:normal;
+}
+
+
+
+/*  */
+
+
+
+
+
+.typeTagLine {
+  font-size: 3vw;
+  margin: 0 auto 3% auto;
+}
+
+.darkSection {
+  padding: 0 0 3% 0;
+}
+
+.lightSection {
+  padding: 0 0 3% 0;
+}
+
+.sectionTitle {
+  font-size: 4vw;
+  padding: 3% 5% 1% 5%;
+}
+.sectionText {
+  font-size: 3vw;
+  padding: 0 5% 1% 5%;
+  
+}
+
+.sectionSubHeading {
+  font-size: 3.5vw;
+  padding: 3% 7% 1% 7%;
+}
+.sectionSubText {
+  font-size: 3vw;
+  padding: 0 7% 1% 7%;
+}
+
+
+/* ========================{ OLD CODE BELOW }======================================= */
+
+
+
+  .appleii {
+    width: 70%;
+    transition: width .4s;
+  }
+
+  .appleii:hover {
+    width: 75%;
+  }
+
+
+
+  .desktopExtra {
+    /* visibility: hidden; */
+    display: none;
+  }
+
+  .mobileExtra {
+    visibility: visible;
+    /* display: inline-block; */
+  }
+
+
+  .footerRow {
+    /* height: 30vh; */
+  }
+
+  .copyRow {
+    /* height: 7vh; */
+  }
+
+  .footerTitle {
+    font-size: 3vw;
+  }
+
+  .footerLinks {
+    font-size: 2vw;
+    text-decoration: none;
+  }
+
+  .copyright {
+    font-size: 2vw;
+    margin: 5% auto 15% auto;
+    color: orange;
+  }
+
+}
