@@ -52,6 +52,19 @@
             /* background-color: rgb(242, 242, 242); */
         }
 
+
+.resultLink {
+            text-decoration: none;
+            color: rgb(33, 37, 41);
+        }
+
+        .resultLink:hover {
+            text-decoration: none;
+            color: rgb(119, 127, 133);
+            
+        }
+
+
         .quizArea {
             margin: 5% auto;
             padding: 5% auto;
@@ -67,12 +80,21 @@
         .questionStyle {
             font-weight: bold;
             font-size: 2.5vw;
+            /* padding: 0 5%; */
         }
 
         .qStyle {
             font-size: 2vw;
+            margin: 3% auto;
+            /* padding: 0 4% */
+            /* background-color:red; */
             /* color: red; */
         }
+
+       /* .quizClass {
+        padding: 0 5%;
+        font-weight: bold;
+       } */
 
         #submitQuizBtnID {
             margin: 2% auto 20% auto;
@@ -152,6 +174,28 @@
             font-weight: bold;
             font-size: larger;
         }
+
+
+/* ========================{ Media Queries }======================================= */
+
+/* PHONES */
+
+@media screen and (max-width: 992px) {
+
+        .quizClass {
+        padding: 0 5%;
+        font-weight: bold;
+       }
+
+       .questionStyle {
+        font-size: 4vw;
+       }
+
+       .qStyle {
+        font-size: 3vw;
+       }
+    
+    }
     </style>
 
     <!-- ----------------------------------------------------------------------------------------- -->
@@ -251,7 +295,7 @@
             <div class="col-lg-3"></div>
             <div class="col-lg-6">
                 <div class="quizCenter">
-                    <div class="row q1">
+                    <div class="row q1 quizClass">
                         <div class="col-lg-12">
                             <span class="questionStyle">1. When stress rises suddenly, what do you notice first inside
                                 you?</span>
@@ -273,7 +317,7 @@
                             <br><br>
                         </div>
                     </div>
-                    <div class="row q2">
+                    <div class="row q2 quizClass">
                         <div class="col-lg-12">
                             <span class="questionStyle">2. In tense conversations, what do you tend to track most
                                 closely?</span>
@@ -293,7 +337,7 @@
                             <br><br>
                         </div>
                     </div>
-                    <div class="row q3">
+                    <div class="row q3 quizClass">
                         <div class="col-lg-12">
                             <span class="questionStyle">3. When you are unsure what to do next, what guides you
                                 first?</span>
@@ -313,7 +357,7 @@
                             <br><br>
                         </div>
                     </div>
-                    <div class="row q4">
+                    <div class="row q4 quizClass">
                         <div class="col-lg-12">
                             <span class="questionStyle">4. You are handed an unexpected responsibility. What feels most
                                 true?</span>
@@ -333,7 +377,7 @@
                             <br><br>
                         </div>
                     </div>
-                    <div class="row q5">
+                    <div class="row q5 quizClass">
                         <div class="col-lg-12">
                             <span class="questionStyle">5. When something feels off, where do you notice it
                                 first?</span>
@@ -354,7 +398,7 @@
                             <br><br>
                         </div>
                     </div>
-                    <div class="row q6">
+                    <div class="row q6 quizClass">
                         <div class="col-lg-12">
                             <span class="questionStyle">6. In close relationships, what do you most work to
                                 protect?</span>
@@ -377,7 +421,7 @@
                             <br><br>
                         </div>
                     </div>
-                    <div class="row q7">
+                    <div class="row q7 quizClass">
                         <div class="col-lg-12">
                             <span class="questionStyle">7. When you feel overwhelmed, what is your usual
                                 response?</span>
@@ -400,7 +444,7 @@
                             <br><br>
                         </div>
                     </div>
-                    <div class="row q8">
+                    <div class="row q8 quizClass">
                         <div class="col-lg-12">
                             <span class="questionStyle">8. What creates the most inner strain for you?</span>
                             <br><br>
@@ -423,7 +467,7 @@
                             <br><br>
                         </div>
                     </div>
-                    <div class="row q9">
+                    <div class="row q9 quizClass">
                         <div class="col-lg-12">
                             <span class="questionStyle">9. In group settings, where does your attention settle
                                 first?</span>
@@ -447,7 +491,7 @@
                             <br><br>
                         </div>
                     </div>
-                    <div class="row q10">
+                    <div class="row q10 quizClass">
                         <div class="col-lg-12">
                             <span class="questionStyle">10. When a plan changes at the last minute, what happens inside
                                 you?</span>
@@ -471,7 +515,7 @@
                             <br><br>
                         </div>
                     </div>
-                    <div class="row q11">
+                    <div class="row q11 quizClass">
                         <div class="col-lg-12">
                             <span class="questionStyle">11. Which description feels most familiar about your daily inner
                                 life?</span>
@@ -494,7 +538,7 @@
                             <br><br>
                         </div>
                     </div>
-                    <div class="row q12">
+                    <div class="row q12 quizClass">
                         <div class="col-lg-12">
                             <span class="questionStyle">12. When you think about your growth, what matters most?</span>
                             <br><br>
@@ -764,14 +808,18 @@
         // <!-- ----------------------------------------------------------------------------------------- -->
 
 
-        var type1description = "<div class=“winTitle”>Type One<br><br>Anchor</div><br>You move through the world with a strong orientation toward responsibility, clarity, and what feels grounded. Your attention settles naturally on what needs to be improved or stabilized, and you often feel an internal pull toward doing things well and maintaining steady standards. This focus helps you create order and reliability, yet it can also bring tension when circumstances feel chaotic or when your own expectations grow heavy.<br><br> At your best, you bring calm structure and thoughtful direction. You help others see what is possible when care and consistency guide the process. Growth often involves softening the pressure within you, allowing space for flexibility, and recognizing that ease can support integrity just as much as effort.<br><br> Reflection: Where do you notice yourself tightening in the name of doing things right, and what shifts when you allow a little more space around those moments<br><br> Next step: Visit the Type One page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
+        // var type1description = "<div class=“winTitle”>Type One<br><br>Anchor</div><br>You move through the world with a strong orientation toward responsibility, clarity, and what feels grounded. Your attention settles naturally on what needs to be improved or stabilized, and you often feel an internal pull toward doing things well and maintaining steady standards. This focus helps you create order and reliability, yet it can also bring tension when circumstances feel chaotic or when your own expectations grow heavy.<br><br> At your best, you bring calm structure and thoughtful direction. You help others see what is possible when care and consistency guide the process. Growth often involves softening the pressure within you, allowing space for flexibility, and recognizing that ease can support integrity just as much as effort.<br><br> Reflection: Where do you notice yourself tightening in the name of doing things right, and what shifts when you allow a little more space around those moments<br><br> Next step: Visit the Type One page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
+var type1description = "<div class=“winTitle”><a href='type1.html' class='resultLink'>Type One<br><br>Anchor</a></div><br>You move through the world with a strong orientation toward responsibility, clarity, and what feels grounded. Your attention settles naturally on what needs to be improved or stabilized, and you often feel an internal pull toward doing things well and maintaining steady standards. This focus helps you create order and reliability, yet it can also bring tension when circumstances feel chaotic or when your own expectations grow heavy.<br><br> At your best, you bring calm structure and thoughtful direction. You help others see what is possible when care and consistency guide the process. Growth often involves softening the pressure within you, allowing space for flexibility, and recognizing that ease can support integrity just as much as effort.<br><br> Reflection: Where do you notice yourself tightening in the name of doing things right, and what shifts when you allow a little more space around those moments<br><br> Next step: Visit the <a href='type1.html' class='resultLink'>Type One</a> page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
+
+
 
         // <!-- ----------------------------------------------------------------------------------------- -->
         // <!-- ----------------------------TYPE 2 DESCRIPTION------------------------------------------- -->
         // <!-- ----------------------------------------------------------------------------------------- -->
 
 
-        var type2description = "<div class=“winTitle”>Type Two<br><br>Helper</div><br>You navigate life with a deep sensitivity to emotional connection and the wellbeing of others. Your attention moves quickly toward what people need, and you often feel a natural pull to offer care, support, or reassurance. This creates warmth and meaningful relationships, though it can also lead you away from your own needs when you feel responsible for the moods or comfort of others.<br><br>At your best, you bring steady empathy, presence, and a genuine ability to respond to others with insight and care. You help people feel understood and valued. Growth often involves remembering that your own needs matter, learning to receive care without hesitation, and allowing connection to arise from honesty rather than effort.<br><br> Reflection: Where do you notice yourself moving toward others automatically, and what becomes clear when you pause long enough to ask what you need as well<br><br>Next step: Visit the Type Two page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
+        // var type2description = "<div class=“winTitle”>Type Two<br><br>Helper</div><br>You navigate life with a deep sensitivity to emotional connection and the wellbeing of others. Your attention moves quickly toward what people need, and you often feel a natural pull to offer care, support, or reassurance. This creates warmth and meaningful relationships, though it can also lead you away from your own needs when you feel responsible for the moods or comfort of others.<br><br>At your best, you bring steady empathy, presence, and a genuine ability to respond to others with insight and care. You help people feel understood and valued. Growth often involves remembering that your own needs matter, learning to receive care without hesitation, and allowing connection to arise from honesty rather than effort.<br><br> Reflection: Where do you notice yourself moving toward others automatically, and what becomes clear when you pause long enough to ask what you need as well<br><br>Next step: Visit the Type Two page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
+var type2description = "<div class=“winTitle”><a href='type2.html' class='resultLink'>Type Two<br><br>Helper</a></div><br>You navigate life with a deep sensitivity to emotional connection and the wellbeing of others. Your attention moves quickly toward what people need, and you often feel a natural pull to offer care, support, or reassurance. This creates warmth and meaningful relationships, though it can also lead you away from your own needs when you feel responsible for the moods or comfort of others.<br><br>At your best, you bring steady empathy, presence, and a genuine ability to respond to others with insight and care. You help people feel understood and valued. Growth often involves remembering that your own needs matter, learning to receive care without hesitation, and allowing connection to arise from honesty rather than effort.<br><br> Reflection: Where do you notice yourself moving toward others automatically, and what becomes clear when you pause long enough to ask what you need as well<br><br>Next step: Visit the <a href='type2.html' class='resultLink'>Type Two</a> page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
 
 
 
@@ -780,8 +828,9 @@
         // <!-- ----------------------------------------------------------------------------------------- -->
 
 
-        var type3description = "<div class=“winTitle”>Type Three<br><br>Performer</div><br>You move through life with focus, drive, and a clear sense of what will move things forward. Your attention tracks goals, expectations, and the ways you can present yourself effectively. This brings momentum and accomplishment, yet it can also create distance from your inner life when performance becomes the primary way you seek value or stability.<br><br>At your best, you bring clarity, motivation, and genuine capability. You help others see what is possible through effort and intention. Growth often involves slowing enough to notice your feelings, honoring limits, and grounding your identity in authenticity instead of achievement.<br><br>Reflection: When do you notice yourself managing impressions, and what shifts when you let yourself be seen without adjusting or shaping the moment<br><br>Next step: Visit the Type Three page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
-        
+        // var type3description = "<div class=“winTitle”>Type Three<br><br>Performer</div><br>You move through life with focus, drive, and a clear sense of what will move things forward. Your attention tracks goals, expectations, and the ways you can present yourself effectively. This brings momentum and accomplishment, yet it can also create distance from your inner life when performance becomes the primary way you seek value or stability.<br><br>At your best, you bring clarity, motivation, and genuine capability. You help others see what is possible through effort and intention. Growth often involves slowing enough to notice your feelings, honoring limits, and grounding your identity in authenticity instead of achievement.<br><br>Reflection: When do you notice yourself managing impressions, and what shifts when you let yourself be seen without adjusting or shaping the moment<br><br>Next step: Visit the Type Three page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
+        var type3description = "<div class=“winTitle”><a href='type3.html' class='resultLink'>Type Three<br><br>Performer</a></div><br>You move through life with focus, drive, and a clear sense of what will move things forward. Your attention tracks goals, expectations, and the ways you can present yourself effectively. This brings momentum and accomplishment, yet it can also create distance from your inner life when performance becomes the primary way you seek value or stability.<br><br>At your best, you bring clarity, motivation, and genuine capability. You help others see what is possible through effort and intention. Growth often involves slowing enough to notice your feelings, honoring limits, and grounding your identity in authenticity instead of achievement.<br><br>Reflection: When do you notice yourself managing impressions, and what shifts when you let yourself be seen without adjusting or shaping the moment<br><br>Next step: Visit the <a href='type3.html' class='resultLink'>Type Three</a> page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
+
 
 
         // <!-- ----------------------------------------------------------------------------------------- -->
@@ -789,7 +838,8 @@
         // <!-- ----------------------------------------------------------------------------------------- -->
 
 
-        var type4description = "<div class=“winTitle”>Type Four<br><br>Individualist</div><br>You move through the world with emotional awareness, depth, and a natural pull toward meaning. You sense what is missing, what feels significant, and what lies beneath the surface. This brings insight and authenticity, though it can also draw you toward comparison, longing, or old emotional narratives that feel familiar.<br><br>At your best, you bring honesty, creativity, and a steady capacity to reflect on what matters. You help others slow down, feel more deeply, and understand the layers within experience. Growth often involves recognizing your inherent worth, balancing emotion with presence, and staying connected to what is stable rather than what feels unresolved.<br><br>Reflection: Where do you sense yourself leaning into emotional depth out of habit, and what becomes possible when you anchor yourself in the present moment<br><br>Next step: Visit the Type Four page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
+        // var type4description = "<div class=“winTitle”>Type Four<br><br>Individualist</div><br>You move through the world with emotional awareness, depth, and a natural pull toward meaning. You sense what is missing, what feels significant, and what lies beneath the surface. This brings insight and authenticity, though it can also draw you toward comparison, longing, or old emotional narratives that feel familiar.<br><br>At your best, you bring honesty, creativity, and a steady capacity to reflect on what matters. You help others slow down, feel more deeply, and understand the layers within experience. Growth often involves recognizing your inherent worth, balancing emotion with presence, and staying connected to what is stable rather than what feels unresolved.<br><br>Reflection: Where do you sense yourself leaning into emotional depth out of habit, and what becomes possible when you anchor yourself in the present moment<br><br>Next step: Visit the Type Four page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
+var type4description = "<div class=“winTitle”><a href='type4.html' class='resultLink'>Type Four<br><br>Individualist</a></div><br>You move through the world with emotional awareness, depth, and a natural pull toward meaning. You sense what is missing, what feels significant, and what lies beneath the surface. This brings insight and authenticity, though it can also draw you toward comparison, longing, or old emotional narratives that feel familiar.<br><br>At your best, you bring honesty, creativity, and a steady capacity to reflect on what matters. You help others slow down, feel more deeply, and understand the layers within experience. Growth often involves recognizing your inherent worth, balancing emotion with presence, and staying connected to what is stable rather than what feels unresolved.<br><br>Reflection: Where do you sense yourself leaning into emotional depth out of habit, and what becomes possible when you anchor yourself in the present moment<br><br>Next step: Visit the <a href='type4.html' class='resultLink'>Type Four</a> page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
 
 
         // <!-- ----------------------------------------------------------------------------------------- -->
@@ -797,7 +847,8 @@
         // <!-- ----------------------------------------------------------------------------------------- -->
 
 
-        var type5description = "<div class=“winTitle”>Type Five<br><br>Observer</div><br>You move through life by gathering understanding, conserving energy, and creating internal order. Your attention pulls inward, seeking clarity before engagement. This helps you feel steady and prepared, though it can also create distance from your own needs or the relational support available to you.<br><br>At your best, you bring insight, perspective, and a thoughtful approach to complex situations. You help others step back, reflect, and make sense of what might otherwise feel overwhelming. Growth often involves trusting your capacity, staying connected when emotions rise, and allowing yourself to participate even when the moment feels uncertain.<br><br>Reflection: When do you notice yourself withdrawing to manage overwhelm, and what changes when you stay in the room a little longer than feels comfortable<br><br>Next step: Visit the Type Five page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
+        // var type5description = "<div class=“winTitle”>Type Five<br><br>Observer</div><br>You move through life by gathering understanding, conserving energy, and creating internal order. Your attention pulls inward, seeking clarity before engagement. This helps you feel steady and prepared, though it can also create distance from your own needs or the relational support available to you.<br><br>At your best, you bring insight, perspective, and a thoughtful approach to complex situations. You help others step back, reflect, and make sense of what might otherwise feel overwhelming. Growth often involves trusting your capacity, staying connected when emotions rise, and allowing yourself to participate even when the moment feels uncertain.<br><br>Reflection: When do you notice yourself withdrawing to manage overwhelm, and what changes when you stay in the room a little longer than feels comfortable<br><br>Next step: Visit the Type Five page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
+var type5description = "<div class=“winTitle”><a href='type5.html' class='resultLink'>Type Five<br><br>Observer</a></div><br>You move through life by gathering understanding, conserving energy, and creating internal order. Your attention pulls inward, seeking clarity before engagement. This helps you feel steady and prepared, though it can also create distance from your own needs or the relational support available to you.<br><br>At your best, you bring insight, perspective, and a thoughtful approach to complex situations. You help others step back, reflect, and make sense of what might otherwise feel overwhelming. Growth often involves trusting your capacity, staying connected when emotions rise, and allowing yourself to participate even when the moment feels uncertain.<br><br>Reflection: When do you notice yourself withdrawing to manage overwhelm, and what changes when you stay in the room a little longer than feels comfortable<br><br>Next step: Visit the <a href='type5.html' class='resultLink'>Type Five</a> page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
 
 
         // <!-- ----------------------------------------------------------------------------------------- -->
@@ -805,7 +856,8 @@
         // <!-- ----------------------------------------------------------------------------------------- -->
 
 
-        var type6description = "<div class=“winTitle”>Type Six<br><br>Guardian</div><br>You move through the world by scanning, assessing, and preparing. Your attention follows what requires caution, what needs structure, and what must be understood before you can relax. This brings responsibility and foresight, though it can also heighten worry when uncertainty grows or when trust feels difficult to locate.<br><br>At your best, you bring loyalty, courage, and a grounded sense of responsibility. You help others think clearly about what needs care and what will support long term stability. Growth often involves building trust in yourself, noticing when worry becomes a habit, and allowing support to meet you instead of carrying everything alone.<br><br>Reflection: Where do you sense yourself bracing for what might happen, and what becomes available when you let the present moment guide your next step<br><br>Next step: Visit the Type Six page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
+        // var type6description = "<div class=“winTitle”>Type Six<br><br>Guardian</div><br>You move through the world by scanning, assessing, and preparing. Your attention follows what requires caution, what needs structure, and what must be understood before you can relax. This brings responsibility and foresight, though it can also heighten worry when uncertainty grows or when trust feels difficult to locate.<br><br>At your best, you bring loyalty, courage, and a grounded sense of responsibility. You help others think clearly about what needs care and what will support long term stability. Growth often involves building trust in yourself, noticing when worry becomes a habit, and allowing support to meet you instead of carrying everything alone.<br><br>Reflection: Where do you sense yourself bracing for what might happen, and what becomes available when you let the present moment guide your next step<br><br>Next step: Visit the Type Six page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
+var type6description = "<div class=“winTitle”><a href='type6.html' class='resultLink'>Type Six<br><br>Guardian</a></div><br>You move through the world by scanning, assessing, and preparing. Your attention follows what requires caution, what needs structure, and what must be understood before you can relax. This brings responsibility and foresight, though it can also heighten worry when uncertainty grows or when trust feels difficult to locate.<br><br>At your best, you bring loyalty, courage, and a grounded sense of responsibility. You help others think clearly about what needs care and what will support long term stability. Growth often involves building trust in yourself, noticing when worry becomes a habit, and allowing support to meet you instead of carrying everything alone.<br><br>Reflection: Where do you sense yourself bracing for what might happen, and what becomes available when you let the present moment guide your next step<br><br>Next step: Visit the Type <a href='type6.html' class='resultLink'>Six page</a> to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
 
 
         // <!-- ----------------------------------------------------------------------------------------- -->
@@ -813,7 +865,8 @@
         // <!-- ----------------------------------------------------------------------------------------- -->
 
 
-        var type7description = "<div class=“winTitle”>Type Seven<br><br>Enthusiast</div><br>You move through life with openness, energy, and a steady pull toward possibility. Your attention jumps to what could be enjoyed or created next. This brings optimism and flexibility, though it can also keep you moving past difficult emotions or experiences that need your attention.<br><br>At your best, you bring creativity, resilience, and a natural ability to reframe challenges. You help others see potential and maintain hope when situations feel heavy. Growth often involves slowing down, allowing discomfort to surface, and discovering that depth can expand your freedom rather than limit it.<br><br>Reflection: When do you sense yourself rushing toward the next idea or distraction, and what changes when you remain still long enough to feel what is present<br><br>Next step: Visit the Type Seven page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
+        // var type7description = "<div class=“winTitle”>Type Seven<br><br>Enthusiast</div><br>You move through life with openness, energy, and a steady pull toward possibility. Your attention jumps to what could be enjoyed or created next. This brings optimism and flexibility, though it can also keep you moving past difficult emotions or experiences that need your attention.<br><br>At your best, you bring creativity, resilience, and a natural ability to reframe challenges. You help others see potential and maintain hope when situations feel heavy. Growth often involves slowing down, allowing discomfort to surface, and discovering that depth can expand your freedom rather than limit it.<br><br>Reflection: When do you sense yourself rushing toward the next idea or distraction, and what changes when you remain still long enough to feel what is present<br><br>Next step: Visit the Type Seven page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
+var type7description = "<div class=“winTitle”><a href='type7.html' class='resultLink'>Type Seven<br><br>Enthusiast</a></div><br>You move through life with openness, energy, and a steady pull toward possibility. Your attention jumps to what could be enjoyed or created next. This brings optimism and flexibility, though it can also keep you moving past difficult emotions or experiences that need your attention.<br><br>At your best, you bring creativity, resilience, and a natural ability to reframe challenges. You help others see potential and maintain hope when situations feel heavy. Growth often involves slowing down, allowing discomfort to surface, and discovering that depth can expand your freedom rather than limit it.<br><br>Reflection: When do you sense yourself rushing toward the next idea or distraction, and what changes when you remain still long enough to feel what is present<br><br>Next step: Visit the <a href='type7.html' class='resultLink'>Type Seven</a> page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
 
 
         // <!-- ----------------------------------------------------------------------------------------- -->
@@ -821,7 +874,8 @@
         // <!-- ----------------------------------------------------------------------------------------- -->
 
 
-        var type8description = "<div class=“winTitle”>Type Eight<br><br>Protector</div><br>You move through the world with strength, directness, and an instinct to guard what feels vulnerable. Your attention tracks power, fairness, and the need to stay in control of your environment. This creates clarity and decisive action, though it can also intensify conflict when you feel threatened or misunderstood.<br><br>At your best, you bring protection, leadership, and a steady commitment to truth. You help others feel safe, supported, and defended in moments of stress. Growth often involves softening your stance, allowing others to meet you, and recognizing that vulnerability can strengthen connection rather than weaken it.<br><br>Reflection: Where do you feel yourself pushing forward out of habit, and what shifts when you let someone else share the weight of the moment<br><br>Next step: Visit the Type Eight page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
+        // var type8description = "<div class=“winTitle”>Type Eight<br><br>Protector</div><br>You move through the world with strength, directness, and an instinct to guard what feels vulnerable. Your attention tracks power, fairness, and the need to stay in control of your environment. This creates clarity and decisive action, though it can also intensify conflict when you feel threatened or misunderstood.<br><br>At your best, you bring protection, leadership, and a steady commitment to truth. You help others feel safe, supported, and defended in moments of stress. Growth often involves softening your stance, allowing others to meet you, and recognizing that vulnerability can strengthen connection rather than weaken it.<br><br>Reflection: Where do you feel yourself pushing forward out of habit, and what shifts when you let someone else share the weight of the moment<br><br>Next step: Visit the Type Eight page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
+var type8description = "<div class=“winTitle”><a href='type8.html' class='resultLink'>Type Eight<br><br>Protector</a></div><br>You move through the world with strength, directness, and an instinct to guard what feels vulnerable. Your attention tracks power, fairness, and the need to stay in control of your environment. This creates clarity and decisive action, though it can also intensify conflict when you feel threatened or misunderstood.<br><br>At your best, you bring protection, leadership, and a steady commitment to truth. You help others feel safe, supported, and defended in moments of stress. Growth often involves softening your stance, allowing others to meet you, and recognizing that vulnerability can strengthen connection rather than weaken it.<br><br>Reflection: Where do you feel yourself pushing forward out of habit, and what shifts when you let someone else share the weight of the moment<br><br>Next step: Visit the <a href='type8.html' class='resultLink'>Type Eight</a> page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
 
 
         // <!-- ----------------------------------------------------------------------------------------- -->
@@ -829,7 +883,8 @@
         // <!-- ----------------------------------------------------------------------------------------- -->
 
 
-        var type9description = "<div class=“winTitle”>Type Nine<br><br>Harmonizer</div><br>You move through life with steadiness, receptivity, and a quiet pull toward peace. Your attention softens around tension and seeks the path that maintains comfort and connection. This brings calm presence, though it can also blur your own priorities or make conflict feel overwhelming.<br><br>At your best, you bring patience, understanding, and a grounded ability to see multiple perspectives. You help others settle, communicate, and find common ground. Growth often involves naming what you want, stepping toward action, and trusting that your voice adds value even when it disrupts comfort.<br><br>Reflection: When do you sense yourself fading into the background, and what becomes possible when you let your own direction come forward<br><br>Next step: Visit the Type Nine page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
+        // var type9description = "<div class=“winTitle”>Type Nine<br><br>Harmonizer</div><br>You move through life with steadiness, receptivity, and a quiet pull toward peace. Your attention softens around tension and seeks the path that maintains comfort and connection. This brings calm presence, though it can also blur your own priorities or make conflict feel overwhelming.<br><br>At your best, you bring patience, understanding, and a grounded ability to see multiple perspectives. You help others settle, communicate, and find common ground. Growth often involves naming what you want, stepping toward action, and trusting that your voice adds value even when it disrupts comfort.<br><br>Reflection: When do you sense yourself fading into the background, and what becomes possible when you let your own direction come forward<br><br>Next step: Visit the Type Nine page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
+ var type9description = "<div class=“winTitle”><a href='type9.html' class='resultLink'>Type Nine<br><br>Harmonizer</a></div><br>You move through life with steadiness, receptivity, and a quiet pull toward peace. Your attention softens around tension and seeks the path that maintains comfort and connection. This brings calm presence, though it can also blur your own priorities or make conflict feel overwhelming.<br><br>At your best, you bring patience, understanding, and a grounded ability to see multiple perspectives. You help others settle, communicate, and find common ground. Growth often involves naming what you want, stepping toward action, and trusting that your voice adds value even when it disrupts comfort.<br><br>Reflection: When do you sense yourself fading into the background, and what becomes possible when you let your own direction come forward<br><br>Next step: Visit the <a href='type1.html' class='resultLink'>Type Nine</a> page to explore the deeper patterns, motivations, and strengths that shape this experience. <br><br>"
 
 
         // <!-- ----------------------------------------------------------------------------------------- -->
@@ -837,7 +892,7 @@
         // <!-- ----------------------------------------------------------------------------------------- -->
 
         // var bizPlug = "<br> BIZ PLUG"
-        var bizPlug = ""
+        var bizPlug = "<br><br>"
 
 
         // <!-- ----------------------------------------------------------------------------------------- -->
@@ -1353,7 +1408,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type4 > type2 && type4 > type1 && type4 > type1 && type4 > type5 && type4 > type6 && type4 > type7 && type4 > type8 && type4 > type9) {
+            } else if (type4 > type2 && type4 > type1 && type4 > type3 && type4 > type5 && type4 > type6 && type4 > type7 && type4 > type8 && type4 > type9) {
                 console.log("type 4 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type4description + "</div>");
                 $(".answersAreaDisplay").append("<div class='win1'>type1 total = " + type1 + "</div>");
@@ -1367,7 +1422,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type5 > type2 && type5 > type1 && type5 > type4 && type5 > type1 && type5 > type6 && type5 > type7 && type5 > type8 && type5 > type9) {
+            } else if (type5 > type2 && type5 > type3 && type5 > type4 && type5 > type1 && type5 > type6 && type5 > type7 && type5 > type8 && type5 > type9) {
                 console.log("type 5 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type5description + "</div>");
                 $(".answersAreaDisplay").append("<div class='win1'>type1 total = " + type1 + "</div>");
@@ -1381,7 +1436,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type6 > type2 && type6 > type1 && type6 > type4 && type6 > type5 && type6 > type1 && type6 > type7 && type6 > type8 && type6 > type9) {
+            } else if (type6 > type2 && type6 > type1 && type6 > type4 && type6 > type5 && type6 > type3 && type6 > type7 && type6 > type8 && type6 > type9) {
                 console.log("type 6 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type6description + "</div>");
                 $(".answersAreaDisplay").append("<div class='win1'>type1 total = " + type1 + "</div>");
@@ -1395,7 +1450,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type7 > type2 && type7 > type1 && type7 > type4 && type7 > type5 && type7 > type6 && type7 > type1 && type7 > type8 && type7 > type9) {
+            } else if (type7 > type2 && type7 > type1 && type7 > type4 && type7 > type5 && type7 > type6 && type7 > type3 && type7 > type8 && type7 > type9) {
                 console.log("type 7 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type7description + "</div>");
                 $(".answersAreaDisplay").append("<div class='win1'>type1 total = " + type1 + "</div>");
@@ -1409,7 +1464,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type8 > type2 && type8 > type1 && type8 > type4 && type8 > type5 && type8 > type6 && type8 > type7 && type8 > type1 && type8 > type9) {
+            } else if (type8 > type2 && type8 > type3 && type8 > type4 && type8 > type5 && type8 > type6 && type8 > type7 && type8 > type1 && type8 > type9) {
                 console.log("type 8 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type8description + "</div>");
                 $(".answersAreaDisplay").append("<div class='win1'>type1 total = " + type1 + "</div>");
@@ -1423,7 +1478,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type9 > type2 && type9 > type1 && type9 > type4 && type9 > type5 && type9 > type6 && type9 > type7 && type9 > type8 && type9 > type1) {
+            } else if (type9 > type2 && type9 > type3 && type9 > type4 && type9 > type5 && type9 > type6 && type9 > type7 && type9 > type8 && type9 > type1) {
                 console.log("type 9 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type9description + "</div>");
                 $(".answersAreaDisplay").append("<div class='win1'>type1 total = " + type1 + "</div>");
@@ -1441,7 +1496,7 @@
                 // ============BEGIN ALL THE TIES=======================================================
                 // =====================================================================================
                 // ============BEGIN TYPE 1 TIES========================================================
-            } else if (type1 == type2) {
+            } else if (type1 == type2 && type1 > type3 && type1 > type4 && type1 > type5 && type1 > type6 && type1 > type7 && type1 > type8 && type1 > type9) {
                 console.log("type 1 & type 2 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type1description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type2description + "</div>");
@@ -1456,7 +1511,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type1 == type3) {
+            } else if (type1 == type3 && type1 > type2 && type1 > type4 && type1 > type5 && type1 > type6 && type1 > type7 && type1 > type8 && type1 > type9) {
                 console.log("type 1 & type 3 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type1description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type3description + "</div>");
@@ -1471,7 +1526,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type1 == type4) {
+            } else if (type1 == type4 && type1 > type2 && type1 > type3 && type1 > type5 && type1 > type6 && type1 > type7 && type1 > type8 && type1 > type9) {
                 console.log("type 1 & type 4 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type1description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type4description + "</div>");
@@ -1486,7 +1541,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type1 == type5) {
+            } else if (type1 == type5 && type1 > type2 && type1 > type3 && type1 > type4 && type1 > type6 && type1 > type7 && type1 > type8 && type1 > type9) {
                 console.log("type 1 & type 5 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type1description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type5description + "</div>");
@@ -1501,7 +1556,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type1 == type6) {
+            } else if (type1 == type6 && type1 > type2 && type1 > type3 && type1 > type4 && type1 > type5 && type1 > type7 && type1 > type8 && type1 > type9) {
                 console.log("type 1 & type 6 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type1description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type6description + "</div>");
@@ -1516,7 +1571,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type1 == type7) {
+            } else if (type1 == type7 && type1 > type2 && type1 > type3 && type1 > type4 && type1 > type5 && type1 > type6 && type1 > type8 && type1 > type9) {
                 console.log("type 1 & type 7 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type1description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type7description + "</div>");
@@ -1531,7 +1586,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type1 == type8) {
+            } else if (type1 == type8 && type1 > type2 && type1 > type3 && type1 > type4 && type1 > type5 && type1 > type6 && type1 > type7 && type1 > type9) {
                 console.log("type 1 & type 8 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type1description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type8description + "</div>");
@@ -1546,7 +1601,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type1 == type9) {
+            } else if (type1 == type9 && type1 > type2 && type1 > type3 && type1 > type4 && type1 > type5 && type1 > type6 && type1 > type7 && type1 > type8) {
                 console.log("type 1 & type 9 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type1description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type9description + "</div>");
@@ -1563,7 +1618,7 @@
                 window.scrollTo(0, 0);
                 // ============END TYPE 1 TIES==========================================================
                 // ============BEGIN TYPE 2 TIES========================================================
-            } else if (type2 == type3) {
+            } else if (type2 == type3 && type2 > type1 && type2 > type4 && type2 > type5 && type2 > type6 && type2 > type7 && type2 > type8 && type2 > type9) {
                 console.log("type 2 & type 3 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type2description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type3description + "</div>");
@@ -1578,7 +1633,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type2 == type4) {
+            } else if (type2 == type4 && type2 > type1 && type2 > type3 && type2 > type5 && type2 > type6 && type2 > type7 && type2 > type8 && type2 > type9) {
                 console.log("type 2 & type 4 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type2description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type4description + "</div>");
@@ -1593,7 +1648,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type2 == type5) {
+            } else if (type2 == type5 && type2 > type1 && type2 > type3 && type2 > type4 && type2 > type6 && type2 > type7 && type2 > type8 && type2 > type9) {
                 console.log("type 2 & type 5 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type2description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type5description + "</div>");
@@ -1608,7 +1663,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type2 == type6) {
+            } else if (type2 == type6 && type2 > type1 && type2 > type3 && type2 > type4 && type2 > type5 && type2 > type7 && type2 > type8 && type2 > type9) {
                 console.log("type 2 & type 6 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type2description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type6description + "</div>");
@@ -1623,7 +1678,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type2 == type7) {
+            } else if (type2 == type7 && type2 > type1 && type2 > type3 && type2 > type4 && type2 > type5 && type2 > type6 && type2 > type8 && type2 > type9) {
                 console.log("type 2 & type 7 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type2description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type7description + "</div>");
@@ -1638,7 +1693,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type2 == type8) {
+            } else if (type2 == type8 && type2 > type1 && type2 > type3 && type2 > type4 && type2 > type5 && type2 > type6 && type2 > type7 && type2 > type9) {
                 console.log("type 2 & type 8 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type2description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type8description + "</div>");
@@ -1653,7 +1708,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type2 == type9) {
+            } else if (type2 == type9 && type2 > type1 && type2 > type3 && type2 > type4 && type2 > type5 && type2 > type6 && type2 > type7 && type2 > type8) {
                 console.log("type 2 & type 9 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type2description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type9description + "</div>");
@@ -1670,7 +1725,7 @@
                 window.scrollTo(0, 0);
                 // ============END TYPE 2 TIES==========================================================
                 // ============BEGIN TYPE 3 TIES========================================================
-            } else if (type3 == type4) {
+            } else if (type3 == type4 && type3 > type2 && type3 > type1 && type3 > type5 && type3 > type6 && type3 > type7 && type3 > type8 && type3 > type9) {
                 console.log("type 3 & type 4 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type3description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type4description + "</div>");
@@ -1685,7 +1740,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type3 == type5) {
+            } else if (type3 == type5 && type3 > type2 && type3 > type1 && type3 > type4 && type3 > type6 && type3 > type7 && type3 > type8 && type3 > type9) {
                 console.log("type 3 & type 5 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type3description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type5description + "</div>");
@@ -1700,7 +1755,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type3 == type6) {
+            } else if (type3 == type6 && type3 > type2 && type3 > type1 && type3 > type4 && type3 > type5 && type3 > type7 && type3 > type8 && type3 > type9) {
                 console.log("type 3 & type 6 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type3description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type6description + "</div>");
@@ -1715,7 +1770,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type3 == type7) {
+            } else if (type3 == type7 && type3 > type2 && type3 > type1 && type3 > type4 && type3 > type5 && type3 > type6 && type3 > type8 && type3 > type9) {
                 console.log("type 3 & type 7 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type3description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type7description + "</div>");
@@ -1730,7 +1785,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type3 == type8) {
+            } else if (type3 == type8 && type3 > type2 && type3 > type1 && type3 > type4 && type3 > type5 && type3 > type6 && type3 > type7 && type3 > type9) {
                 console.log("type 3 & type 8 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type3description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type8description + "</div>");
@@ -1745,7 +1800,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type3 == type9) {
+            } else if (type3 == type9 && type3 > type2 && type3 > type1 && type3 > type4 && type3 > type5 && type3 > type6 && type3 > type7 && type3 > type8) {
                 console.log("type 3 & type 9 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type3description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type9description + "</div>");
@@ -1762,7 +1817,7 @@
                 window.scrollTo(0, 0);
                 // ============END TYPE 3 TIES==========================================================
                 // ============BEGIN TYPE 4 TIES========================================================
-            } else if (type4 == type5) {
+            } else if (type4 == type5 && type4 > type2 && type4 > type1 && type4 > type3 && type4 > type6 && type4 > type7 && type4 > type8 && type4 > type9) {
                 console.log("type 4 & type 5 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type4description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type5description + "</div>");
@@ -1777,7 +1832,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type4 == type6) {
+            } else if (type4 == type6 && type4 > type2 && type4 > type1 && type4 > type3 && type4 > type5 && type4 > type7 && type4 > type8 && type4 > type9) {
                 console.log("type 4 & type 6 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type4description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type6description + "</div>");
@@ -1792,7 +1847,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type4 == type7) {
+            } else if (type4 == type7 && type4 > type2 && type4 > type1 && type4 > type3 && type4 > type5 && type4 > type6 && type4 > type8 && type4 > type9) {
                 console.log("type 4 & type 7 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type4description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type7description + "</div>");
@@ -1807,7 +1862,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type4 == type8) {
+            } else if (type4 == type8 && type4 > type2 && type4 > type1 && type4 > type3 && type4 > type5 && type4 > type6 && type4 > type7 && type4 > type9) {
                 console.log("type 4 & type 8 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type4description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type8description + "</div>");
@@ -1822,7 +1877,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type4 == type9) {
+            } else if (type4 == type9 && type4 > type2 && type4 > type1 && type4 > type3 && type4 > type5 && type4 > type6 && type4 > type7 && type4 > type8) {
                 console.log("type 4 & type 9 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type4description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type9description + "</div>");
@@ -1839,7 +1894,7 @@
                 window.scrollTo(0, 0);
                 // ============END TYPE 4 TIES==========================================================
                 // ============BEGIN TYPE 5 TIES========================================================
-            } else if (type5 == type6) {
+            } else if (type5 == type6 && type5 > type2 && type5 > type3 && type5 > type4 && type5 > type1 && type5 > type7 && type5 > type8 && type5 > type9) {
                 console.log("type 5 & type 6 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type5description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type6description + "</div>");
@@ -1854,7 +1909,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type5 == type7) {
+            } else if (type5 == type7 && type5 > type2 && type5 > type3 && type5 > type4 && type5 > type1 && type5 > type6 && type5 > type8 && type5 > type9) {
                 console.log("type 5 & type 7 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type5description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type7description + "</div>");
@@ -1869,7 +1924,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type5 == type8) {
+            } else if (type5 == type8 && type5 > type2 && type5 > type3 && type5 > type4 && type5 > type1 && type5 > type6 && type5 > type7 && type5 > type9) {
                 console.log("type 5 & type 8 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type5description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type8description + "</div>");
@@ -1884,7 +1939,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type5 == type9) {
+            } else if (type5 == type9 && type5 > type2 && type5 > type3 && type5 > type4 && type5 > type1 && type5 > type6 && type5 > type7 && type5 > type8) {
                 console.log("type 5 & type 9 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type5description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type9description + "</div>");
@@ -1901,7 +1956,7 @@
                 window.scrollTo(0, 0);
                 // ============END TYPE 5 TIES==========================================================
                 // ============BEGIN TYPE 6 TIES========================================================
-            } else if (type6 == type7) {
+            } else if (type6 == type7 && type6 > type2 && type6 > type1 && type6 > type4 && type6 > type5 && type6 > type3 && type6 > type8 && type6 > type9) {
                 console.log("type 6 & type 7 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type6description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type7description + "</div>");
@@ -1916,7 +1971,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type6 == type8) {
+            } else if (type6 == type8 && type6 > type2 && type6 > type1 && type6 > type4 && type6 > type5 && type6 > type3 && type6 > type7 && type6 > type9) {
                 console.log("type 6 & type 8 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type6description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type8description + "</div>");
@@ -1931,7 +1986,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type6 == type9) {
+            } else if (type6 == type9 && type6 > type2 && type6 > type1 && type6 > type4 && type6 > type5 && type6 > type3 && type6 > type7 && type6 > type8) {
                 console.log("type 6 & type 9 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type6description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type9description + "</div>");
@@ -1948,7 +2003,7 @@
                 window.scrollTo(0, 0);
                 // ============END TYPE 6 TIES==========================================================
                 // ============BEGIN TYPE 7 TIES========================================================
-            } else if (type7 == type8) {
+            } else if (type7 == type8 && type7 > type2 && type7 > type1 && type7 > type4 && type7 > type5 && type7 > type6 && type7 > type3 && type7 > type9) {
                 console.log("type 7 & type 8 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type7description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type8description + "</div>");
@@ -1963,7 +2018,7 @@
                 $(".answersAreaDisplay").append("<div class='win1'>type9 total = " + type9 + "</div>");
                 $(".answersAreaDisplay").append("<div class='winTitle'>" + bizPlug + "</div>");
                 window.scrollTo(0, 0);
-            } else if (type7 == type9) {
+            } else if (type7 == type9 && type7 > type2 && type7 > type1 && type7 > type4 && type7 > type5 && type7 > type6 && type7 > type3 && type7 > type8) {
                 console.log("type 7 & type 9 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type7description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type9description + "</div>");
@@ -1980,7 +2035,7 @@
                 window.scrollTo(0, 0);
                 // ============END TYPE 7 TIES==========================================================
                 // ============BEGIN TYPE 8 TIES========================================================
-            } else if (type8 == type9) {
+            } else if (type8 == type9 && type9 > type2 && type9 > type3 && type9 > type4 && type9 > type5 && type9 > type6 && type9 > type7 && type9 > type1) {
                 console.log("type 8 & type 9 won");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type8description + "</div><br><br>");
                 $(".answersAreaDisplay").append("<div class='win1'>" + type9description + "</div>");

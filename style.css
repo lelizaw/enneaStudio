@@ -373,7 +373,7 @@ a:active {
 
 
 .quizzesPageSectionTitle {
-  font-size: 4vw;
+  font-size: 6vw;
   /* padding: 3% 5% 1% 5%; */
   font-weight: bold;;
   text-align: center;
@@ -384,7 +384,7 @@ a:active {
 }
 
 .quizzesPageSectionTitle:hover {
-  font-size: 4vw;
+  /* font-size: 4vw; */
   /* padding: 3% 5% 1% 5%; */
   font-weight: bold;;
   text-align: center;
@@ -395,7 +395,7 @@ a:active {
 }
 
 .quizzesPageSectionTitle:link {
-  font-size: 4vw;
+  /* font-size: 4vw; */
   /* padding: 3% 5% 1% 5%; */
   font-weight: bold;;
   text-align: center;
@@ -809,7 +809,39 @@ font-style:italic;
 }
 
 
+/* ========================{ quiz page }======================================= */
+
+/* .quizzesPageBtnL {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: ;
+  
+} */
+/* .quizzesPageBtnR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  
+} */
+
+.quizzesPageSectionTitle {
+  font-size: 8vw;
+  
+}
+.quizzesPageSectionTitle:hover {
+  font-size: 8vw;
+  
+}
+
+
+
+
+
 /* ========================{ OLD CODE BELOW }======================================= */
+
 
 
 
