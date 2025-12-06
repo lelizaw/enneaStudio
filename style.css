@@ -477,6 +477,26 @@ a:active {
 font-style:italic;
 }
 
+.darkOverLink {
+    text-decoration: none;
+    color: #eceee7;
+
+}
+.darkOverLink:hover {
+    text-decoration: none;
+    color: rgb(145, 145, 145);
+
+}
+.lightOverLink {
+    text-decoration: none;
+    color: rgb(33,37,41);
+
+}
+.lightOverLink:hover {
+    text-decoration: none;
+    color: rgb(145, 145, 145);
+
+}
 
 /* ====================={ Mixed Media }============================================ */
 
